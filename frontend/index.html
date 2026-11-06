@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="contenedor-principal">
+        
+        <header class="encabezado">
+            <h1 class="titulo">Registro de Actividad</h1>
+        </header>
+
+        <form id="formulario" class="cuerpo-formulario" action="http://localhost:3005/actividad" method="POST">
+            
+            <div class="grupo-entrada">
+                <label for="nombre">Nombre de la actividad:</label>
+                <input type="text" id="nombre" name="nombre" class="entrada-texto" placeholder="Ej. Tarea de derivadas">
+            </div>
+
+            <div class="grupo-entrada">
+                <label for="materia">Materia:</label>
+                <input type="text" id="materia" name="materia" class="entrada-texto" placeholder="Ej. Cálculo Integral">
+            </div>
+
+            <div class="grupo-entrada">
+                <label for="prioridad">Prioridad:</label>
+                <select name="prioridad" id="prioridad" class="entrada-texto">
+                    <option value="">Selecciona la prioridad</option>
+                    <option value="Alta">Alta</option>
+                    <option value="Media">Media</option>
+                    <option value="Baja">Baja</option>
+                </select>
+            </div>
+
+            <input type="hidden" name="estado" value="Pendiente">
+
+            <div class="botones">
+                <button type="submit" class="btn-registrar">Registrar actividad</button>
+                <a href="consultar.html" class="btn-consultar">Consultar actividades</a>
+            </div>
+
+        </form>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

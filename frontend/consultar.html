@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Actividades</title>
+    <link rel="stylesheet" href="css/consultar.css">
+</head>
+<body>
+
+    <div class="contenedor-consulta">
+        <header class="encabezado-consulta">
+            <h1>Actividades Escolares</h1>
+            <a href="index.html" class="btn-volver">Volver al Registro</a>
+        </header>
+
+        <div class="tabla-contenedor">
+            <table class="tabla-actividades">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Materia</th>
+                        <th>Prioridad</th>
+                        <th>Estado</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="tabla-actividades">
+                    <!-- se llena aut con el js -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="js/consultar.js"></script>
+</body>
+</html>
